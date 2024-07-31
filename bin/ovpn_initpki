@@ -23,7 +23,7 @@ easyrsa init-pki
 # needed for normal OpenVPN operation.
 easyrsa --batch build-ca $nopass
 
-# easyrsa gen-dh
+easyrsa --batch gen-dh
 # openvpn --genkey secret $EASYRSA_PKI/ta.key
 
 # Was nice to autoset, but probably a bad idea in practice, users should
