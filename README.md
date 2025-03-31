@@ -35,7 +35,12 @@ Finally, each new build updates the `latest` tag, meaning that if you want to us
 ## How to Build Locally
 
 ```bash
-docker build --pull --no-cache -t lisenet/openvpn:latest .
+docker build --pull --no-cache -t ooni/openvpn-test:latest .
+```
+
+If you are on an M1 mac and would like to build for amd64, use:
+```bash
+docker build --platform=linux/amd64 --pull --no-cache -t ooni/openvpn-test:latest .
 ```
 
 ## How to Deploy
